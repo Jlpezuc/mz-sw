@@ -1,0 +1,67 @@
+# ---- JavaScope (GUI Java antigua, solo de referencia; sustituida por mzscope)
+javascope/
+
+# ---- Vivado: proyecto y todo lo que genera (se recrea con vivado/build.tcl)
+vivado/project/
+vivado/.Xil/
+vivado/*.log
+vivado/*.jou
+vivado/*.str
+vivado/*.zip
+vivado/*.backup.*
+.Xil/
+*.jou
+*.log
+*.str
+*.wdb
+*.pb
+xsim.dir/
+vivado_*.backup.jou
+usage_statistics_webtalk.*
+webtalk*.xml
+
+# ---- IP cores: proyectos y caches de Vivado dentro de cada IP (component.xml, hdl/, xgui/, doc/ si se versionan)
+ip_cores/**/*.cache/
+ip_cores/**/*.hw/
+ip_cores/**/*.ip_user_files/
+ip_cores/**/*.sim/
+ip_cores/**/*.runs/
+ip_cores/**/*.gen/
+ip_cores/**/*.srcs/
+ip_cores/**/.Xil/
+ip_cores/**/*.zip
+
+# ---- Vitis: workspace (se genera con tcl_scripts/vitis_generate_MicroZohm_workspace.tcl) y XSA exportado
+vitis/workspace/*
+!vitis/workspace/create_Vitis_workspace_here.txt
+vitis/vivado_exported_xsa/*.xsa
+vitis/Packages/
+vitis/software/**/Debug/
+vitis/software/**/Release/
+vitis/software/**/_ide/
+vitis/software/**/*.o
+vitis/software/**/*.d
+vitis/software/BootImage/BOOT.bin
+.metadata/
+.sdk/
+.analytics
+
+# ---- Documentacion (Sphinx + Doxygen, con PDFs e imagenes pesadas: se mantiene fuera de GitHub)
+docs/
+
+# ---- mzscope (Python)
+__pycache__/
+*.py[cod]
+mzscope/outputs/
+mzscope/mzscope_settings.json
+.venv/
+venv/
+
+# ---- Sistema / editores
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store
+*~
+*.swp

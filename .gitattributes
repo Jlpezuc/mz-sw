@@ -1,0 +1,10 @@
+# Normaliza finales de linea; binarios marcados para que git no los toque
+* text=auto
+*.png binary
+*.jpg binary
+*.pdf binary
+*.zip binary
+*.elf binary
+*.bin binary
+*.mat binary
+*.xsa binary
