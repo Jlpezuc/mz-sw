@@ -1,4 +1,4 @@
-# ---- JavaScope (GUI Java antigua, solo de referencia; sustituida por mzscope)
+# ---- JavaScope (GUI Java antigua, solo de referencia; sustituida por mzscope, repositorio aparte)
 javascope/
 
 # ---- Vivado: proyecto y todo lo que genera (se recrea con vivado/build.tcl)
@@ -49,11 +49,9 @@ vitis/software/BootImage/BOOT.bin
 # ---- Documentacion (Sphinx + Doxygen, con PDFs e imagenes pesadas: se mantiene fuera de GitHub)
 docs/
 
-# ---- mzscope (Python)
+# ---- Python (scripts de docs, etc.)
 __pycache__/
 *.py[cod]
-mzscope/outputs/
-mzscope/mzscope_settings.json
 .venv/
 venv/
 
