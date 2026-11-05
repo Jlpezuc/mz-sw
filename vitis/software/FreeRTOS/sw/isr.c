@@ -26,7 +26,7 @@
 #include "xil_cache.h"
 
 struct APU_to_RPU_t ControlData;
-extern int js_connection_established;
+extern volatile int js_connection_established;
 
 #define input_size   5
 #define layer1_size  15
@@ -92,7 +92,7 @@ void Transfer_ipc_Intr_Handler(void *data)
 
 
 	int status;
-	BaseType_t xHigherPriorityTaskWoken;
+	BaseType_t xHigherPriorityTaskWoken = pdFALSE;
 
 	// Escribir datos en la memoria compartida
 	//control_data1->value[0] = variable;

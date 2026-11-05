@@ -144,6 +144,9 @@ proc vitis_main {} {
   # increase heap size of freertos, to fix javascope glitches
   bsp config total_heap_size 200000000
   platform write
+  # keepalive TCP: el A53 detecta y cierra conexiones muertas del scope (ver sw/ethernet.c)
+  bsp config lwip_tcp_keepalive true
+  platform write
 
   puts "Info (MicroZohm): regenerate FreeRTOS BSP"
   #regenerate board support package
